@@ -91,6 +91,6 @@ app.get('/api/books/:bookName', (request,response)=>{
   }
 })
 
-app.listen(PORT,()=>{
+app.listen(process.env.PORT || PORT,()=>{
   console.log(`Server running on ${PORT}`);
 })
